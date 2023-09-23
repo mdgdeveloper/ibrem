@@ -1,13 +1,21 @@
 ---
+import MainHeader from "./MainHeader.astro";
 const {
     title = "Main Layout",
     description = "Digital Craftsmen's Guild production",
     frontmatter,
+    image,
     robots,
 } = Astro.props;
 ---
 
 <html lang="es">
-    MainHead
+    <MainHeader
+        title={title}
+        description={description}
+        image={image}
+        frontmatter={frontmatter}
+        robots={robots}
+    />
     <body> Header Hero HeadLine ProductList Banner Footer</body>
 </html>
