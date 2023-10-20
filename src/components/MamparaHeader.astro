@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import TagList from "../components/TagList.astro";
+
+// CSS
+import "../styles/mamparas.css";
+
+const { name, img, tags } = Astro.props;
+---
+
+<div class="mb-main">
+    <div>
+        <Image src={img} width={500} height={500} alt={name} class="mb-img" />
+        <div>
+            <TagList tags={tags} />
+        </div>
+    </div>
+</div>

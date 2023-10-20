@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+
+import "../styles/hero.css";
+import heroImage from "../assets/duchart-hero-01.jpg";
+
+import Badges from "./Badges.astro";
+
+const { data } = Astro.props;
+---
+
+<div class="hero-main">
+    <div class="hero-wrapper">
+        <div class="hero-title">
+            <h1 class="main-hero-title">{data.title1}</h1>
+            <h2 class="main-hero-subtitle">{data.subtitle1}</h2>
+            <div class="hero-badges">
+                <Badges />
+            </div>
+        </div>
+        <div class="hero-image">
+            <Image
+                src={heroImage}
+                alt="Duchart Mamparas"
+                class="hero-image-shadow"
+                loading="lazy"
+            />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+
+// Component imports
+import MainLayout from "./MainLayout.astro";
+import MamparaHeader from "../components/MamparaHeader.astro";
+import Presupuesto from "../components/Presupuesto.astro";
+
+// Page Metadata
+const { frontmatter } = Astro.props;
+
+const { name, img, tags } = frontmatter;
+---
+
+<MainLayout
+    title=`Duchart | Mamparas | ${name}`
+    description=`Duchart - Mamparas - ${name}`
+    {frontmatter}
+>
+    <div class="mb-wrapper">
+        <div class="mb-env">
+            <MamparaHeader {name} {img} {tags} />
+            <div class="mb-content">
+                <slot />
+                <Presupuesto />
+            </div>
+        </div>
+    </div>
+</MainLayout>

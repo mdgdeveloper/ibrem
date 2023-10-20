@@ -1,0 +1,23 @@
+---
+// Import components
+import { Image } from "astro:assets";
+
+const { opinion, nombre, img } = Astro.props;
+---
+
+<div class="opinion">
+    <div class="opinion-img">
+        <Image
+            src={img}
+            alt={nombre}
+            class="opinion-img-class"
+            width={120}
+            height={100}
+            quality={40}
+        />
+    </div>
+    <div class="opinion-content">
+        <div class="opinion-content-txt">{opinion}</div>
+        <div class="opinion-content-name">{nombre}</div>
+    </div>
+</div>

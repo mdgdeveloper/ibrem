@@ -1,0 +1,227 @@
+/* 
+
+CSS Style for Mamparas
+Created by Sergio Madrigal
+(c) 2023
+
+*/
+
+.m-main {
+    width: 100%;
+}
+
+.m-header {
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-weight: 300;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 50px;
+}
+
+.m-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.m-item {
+    padding: 10px;
+}
+
+.m-item h2 {
+    @media (width < 768px) {
+        font-weight: 600;
+    }
+}
+
+/* Mampara detail: md */
+
+.mb-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-env {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+
+    @media (width < 1600px) {
+        padding: 20px;
+        width: 90%;
+    }
+
+    @media (width < 768px) {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.mb-content {
+    flex: 2;
+}
+
+.mb-main {
+    flex: 1;
+}
+
+.mb-content h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.mb-content h2 {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+.mb-content p {
+    padding-bottom: 10px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.mb-content table {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.mb-content table td {
+    padding: 5px;
+}
+
+.mb-content table th {
+    padding: 5px;
+    background-color: #f2f2f2;
+}
+
+.mb-content ul {
+    margin-left: 25px;
+    font-weight: 300;
+}
+
+.mb-content li {
+    list-style: disc;
+}
+
+.mb-button {
+    padding: 10px 10px;
+    background-color: #2E3E56;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.mb-button:hover {
+    background-color: #364863;
+}
+
+.mb-img {
+    @media (width < 768px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mamparas a medida .mm*/
+
+.mm-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    @media (width < 1600px) {
+        padding: 20px;
+    }
+
+    @media (width < 768px) {
+        flex-direction: column;
+        padding: 10px;
+        gap: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.mm-medida {
+    width: 70%;
+
+    @media (width < 768px) {
+        width: 100%;
+
+    }
+
+}
+
+.mm-medida h2 {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.mm-medida h3 {
+    text-align: center;
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.mm-medida p {
+    text-align: justify;
+    font-weight: 300;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+
+    @media (width < 768px) {
+        font-size: 1em;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+.mm-medida ul {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.mm-presupuesto {
+    display: flex;
+    justify-content: center;
+}
+
+.mm-image {
+    margin-bottom: 30px;
+
+    @media (width < 1400px) {
+        width: 900px;
+        height: 496px;
+    }
+
+    @media (width < 1200px) {
+        width: 750px;
+        height: 413px;
+    }
+
+    @media (width < 768px) {
+        width: 100%;
+        height: auto;
+    }
+}

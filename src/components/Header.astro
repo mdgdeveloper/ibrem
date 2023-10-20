@@ -1,0 +1,19 @@
+---
+// Library imports
+import { Icon } from "astro-icon";
+
+// Component Imports
+// Link
+// Logo
+
+// data imports
+import navData from "../data/navData";
+---
+
+<nav>
+    <!-- Logo -->
+
+    <ul>
+        {navData.map((item) => <li>{item}</li>)}
+    </ul>
+</nav>

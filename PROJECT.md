@@ -9,5 +9,5 @@ Este proyecto corresponde a la creación de una plantilla básica de diseño en 
 | **Step** | **Description** | **Target Date** | **Status** |
 | --- | --- | --- | --- |
 | 1 | Create the mockup design with Layout Components | 23.09.23 | On going | 
-| 2 | Implement general Layout Components | 23.09.23 | On Going | 
+| 2 | Implement general Layout Components | 23.09.23 | On Going |  
 

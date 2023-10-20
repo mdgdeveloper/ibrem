@@ -1,0 +1,21 @@
+---
+// Import styles
+import "../styles/mamparas.css";
+
+// Import components
+import Mampara from "./Mampara.astro";
+
+// Get list of mamparas from blob storage in ../pages/
+const { mamparas, title = "Mamparas de baño" } = Astro.props;
+---
+
+<section class="m-main">
+    <div class="m-header">{title}</div>
+    <div class="m-list">
+        {
+            mamparas.map((mampara) => (
+                <Mampara mampara={mampara.frontmatter} url={mampara.url} />
+            ))
+        }
+    </div>
+</section>

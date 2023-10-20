@@ -1,0 +1,20 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+
+// Components
+import Mamparas from "../../components/Mamparas.astro";
+
+import "../../styles/global.css";
+import "../../styles/servicesDetail.css";
+const allEquip = await Astro.glob("./*.md");
+
+allEquip.map((equip) => {
+    console.log("equipamiento", equip.frontmatter);
+});
+---
+
+<MainLayout title="Duchart - Mamparas">
+    <div class="sd-main">
+        <Mamparas mamparas={allEquip} title="Equipamiento de baño" />
+    </div>
+</MainLayout>

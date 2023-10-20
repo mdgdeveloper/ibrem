@@ -1,0 +1,9 @@
+---
+const { links } = Astro.props;
+---
+
+<div>
+    <ul class="menu-list">
+        {links.map( link => <li><a href={link.path}>{link.name}</a></li> )}
+    </ul>
+</div>

@@ -1,0 +1,33 @@
+---
+// Import components
+import Logo from "./Logo.astro";
+import Menu from "./Menu.astro";
+
+// Import styles
+import "./nav.css";
+
+// Import data
+import navData from "../data/navData.js";
+
+// Create two menus
+const linksMenu1 = navData.slice(0, 2);
+const linksMenu2 = navData.slice(2, 4);
+---
+
+<nav class="">
+    <section class="navbar">
+        <div class="n-links"><Menu links={linksMenu1} /></div>
+        <div><Logo /></div>
+        <div class="n-links"><Menu links={linksMenu2} /></div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/mamparas">Mamparas</a></li>
+            <li><a href="/mamparas-a-medida">Mamparas a medida</a></li>
+            <li><a href="/equpiamiento-bano"></a>Equipamiento de baño</li>
+        </ul>
+    </section>
+</nav>

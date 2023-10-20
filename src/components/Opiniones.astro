@@ -1,0 +1,21 @@
+---
+// Import componets
+import Opinion from "./Opinion.astro";
+
+// Import styles
+import "../styles/opinion.css";
+
+const { opiniones } = Astro.props;
+---
+
+<section class="opiniones">
+    {
+        opiniones.map((opinion) => (
+            <Opinion
+                nombre={opinion.name}
+                opinion={opinion.opinion}
+                img={opinion.img}
+            />
+        ))
+    }
+</section>

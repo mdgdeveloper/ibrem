@@ -1,5 +1,8 @@
 ---
+import "../styles/global.css";
 import MainHeader from "./MainHeader.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 const {
     title = "Main Layout",
     description = "Digital Craftsmen's Guild production",
@@ -17,5 +20,11 @@ const {
         frontmatter={frontmatter}
         robots={robots}
     />
-    <body> Header Hero HeadLine ProductList Banner Footer</body>
+    <body>
+        <Nav />
+        <main>
+            <slot>Default Text</slot>
+        </main>
+        <Footer />
+    </body>
 </html>

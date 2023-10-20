@@ -1,0 +1,22 @@
+---
+// Styles
+import "../styles/services.css";
+
+const { title, image, url, description } = Astro.props;
+---
+
+<div class="s-item">
+    <a href={url}
+        ><div
+            class="s-box"
+            style={{
+                backgroundColor: `rgba(255, 255, 255, 0.4)`,
+                backgroundImage: `url(${image})`,
+                backgroundSize: "cover",
+            }}
+        >
+            <div class="s-title">{title}</div>
+            <div class="s-description">{description}</div>
+        </div></a
+    >
+</div>

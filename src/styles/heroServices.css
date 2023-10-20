@@ -1,0 +1,36 @@
+.hs-main {
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.hs-wrapper {
+    display: flex;
+    width: 60vw;
+}
+
+.hs-title {
+    flex: 2;
+    display: flex;
+    padding-left: 15vh;
+    flex-direction: column;
+    padding: 60px 10px;
+}
+
+.hs-image {
+    height: 10vw;
+    flex: 1;
+}
+
+.hs-image-shadow {
+    height: 24vw;
+    width: 35vw;
+}
+
+.main-hs-title {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+}

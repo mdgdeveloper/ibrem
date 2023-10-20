@@ -1,16 +1,19 @@
 ---
-import "../styles/global.css";
+// Import data
+import { opiniones } from "../data/opiniones.js";
+import { HERO, SERVICES } from "../data/consts.js";
+
+// Import Components
+import Hero from "../components/Hero.astro";
+import Opiniones from "../components/Opiniones.astro";
+import Services from "../components/Services.astro";
+
+// Import Layouts
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Duchart - Mamparas">
+	<Hero data={HERO} />
+	<Opiniones {opiniones} />
+	<Services data={SERVICES} />
+</MainLayout>

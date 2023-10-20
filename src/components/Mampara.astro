@@ -1,0 +1,23 @@
+---
+// Import assets
+import { Image } from "astro:assets";
+import TagList from "./TagList.astro";
+
+const { mampara, url } = Astro.props;
+console.log("url", url);
+---
+
+<section class="m-item">
+    <div>
+        <a href={url}>
+            <Image
+                src={mampara.img}
+                width={300}
+                height={300}
+                alt={mampara.name}
+            />
+        </a>
+        <h2>{mampara.name}</h2>
+        <TagList tags={mampara.tags} />
+    </div>
+</section>

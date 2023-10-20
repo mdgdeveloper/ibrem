@@ -1,0 +1,46 @@
+---
+import Presupuesto from "../../components/Presupuesto.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+
+import { Image } from "astro:assets";
+import "../../styles/mamparas.css";
+---
+
+<MainLayout title="Duchart - Mamparas - Mamparas a medida">
+    <div class="sd-main">
+        <div class="mm-wrapper">
+            <section class="mm-medida">
+                <h2>Mamparas a Medida</h2>
+                <Image
+                    src="/img/medida.jpg"
+                    width={1200}
+                    height={661}
+                    alt="Mamparas a medida"
+                    class="mm-image"
+                />
+                <p>
+                    En nuestra empresa, ofrecemos mamparas personalizadas para
+                    adaptarse a tus necesidades específicas. Ya sea para un
+                    proyecto residencial o comercial, nuestras mamparas a medida
+                    son la solución perfecta para dividir y decorar tus espacios
+                    de manera única.
+                </p>
+
+                <h3>Características principales:</h3>
+                <ul>
+                    <li>Variedad de materiales y acabados</li>
+                    <li>Diseño personalizado</li>
+                    <li>Asesoramiento de expertos</li>
+                    <li>Instalación profesional</li>
+                </ul>
+
+                <p>
+                    Ponte en contacto con nosotros para discutir tu proyecto y
+                    diseñar la mampara a medida que se adapte a tus necesidades
+                    y estilo.
+                </p>
+                <Presupuesto />
+            </section>
+        </div>
+    </div>
+</MainLayout>

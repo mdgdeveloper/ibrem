@@ -1,0 +1,10 @@
+---
+import Service from "./Service.astro";
+// Import styles
+import "../styles/services.css";
+const { data } = Astro.props;
+---
+
+<div class="s-main">
+    {data.map((service: any) => <Service {...service} />)}
+</div>
