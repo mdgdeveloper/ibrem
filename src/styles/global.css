@@ -12,6 +12,11 @@
   line-height: 1.5;
 }
 
+/* Create a var for the bg color for 2F3E56 */
+:root {
+  --bg-color: #2F3E56;
+}
+
 
 @custom-media --sm (width <=767px);
 @custom-media --md (768px <=width < 1200px);
@@ -66,4 +71,128 @@ li {
   padding: 5px 10px;
   color: white;
   font-size: 0.8em;
+}
+
+/* Modal */
+
+.modal {
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+
+  @media (width < 768px) {
+    padding-top: 50px;
+  }
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+
+  @media (width<1200px) {
+    padding: 10px;
+  }
+
+  @media (width<768px) {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-info {
+  padding: 50px;
+}
+
+.modal-info h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-top: 20px;
+
+  @media (width<768px) {
+    font-size: 1em;
+    padding-top: 5px;
+  }
+}
+
+.modal-info-phone {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.modal-phone-txt a {
+  font-size: 2.8em;
+  color: var(--bg-color);
+  text-decoration: underline;
+
+  @media (width<768px) {
+    font-size: 1.5em;
+  }
+
+}
+
+
+
+.modal-icon-image {
+  width: 50px;
+  height: auto;
+}
+
+.modal-info-phy {
+  display: flex;
+  gap: 50px;
+
+  @media (width<768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+.modal-map-image {
+  @media (width<1200px) {
+    width: 250px;
+    height: auto;
+  }
+
+  @media (width<768px) {
+    width: 95%;
+    height: auto;
+  }
 }

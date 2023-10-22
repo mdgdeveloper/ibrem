@@ -48,8 +48,6 @@
 
 /* Hamburger */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
 .menu {
     display: flex;
     flex-direction: row;

@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+---
+
+<div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-info">
+        <h2>Contáctanos directamente</h2>
+        <div class="modal-info-phone">
+            <div class="modal-icon">
+                <Image
+                    src="/img/phone.jpg"
+                    alt="Duchart Localizacion"
+                    width={200}
+                    height={200}
+                    class="modal-icon-image"
+                />
+            </div>
+            <div class="modal-phone-txt">
+                <a href="tel:6031112298">6031112298</a>
+            </div>
+        </div>
+        <h2>O ven a visitarnos:</h2>
+        <div class="modal-info-phy">
+            <Image
+                src="/img/map.png"
+                alt="Duchart Localizacion"
+                width={439}
+                height={439}
+                class="modal-map-image"
+            />
+            <div>
+                <h2>Duchart</h2>
+                <div>Calle La Plata, 3</div>
+                <div>Silla</div>
+                <div>Valencia</div>
+                <h2>Horario de atención al público:</h2>
+                <div>Lunes a Viernes</div>
+                <div>10:00 a 16:00</div>
+            </div>
+        </div>
+    </div>
+</div>
